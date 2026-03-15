@@ -17,10 +17,10 @@ Think of it like having a research assistant who can read your PDF documents, se
 ## How It Works (Agent Architecture)
 
 ```
-┌─────────────┐     ┌──────────────────┐     ┌────────────────┐     ┌───────────┐     ┌──────────────┐
-│  User Query  │ ──▶ │  Nova Reasoning   │ ──▶ │ Tool Selection  │ ──▶ │ Execution │ ──▶ │  Synthesis   │
-│  (Question)  │     │  (Amazon Nova 2)  │     │  (Which tool?)  │     │ (Run it!) │     │ (Answer!)    │
-└─────────────┘     └──────────────────┘     └────────────────┘     └───────────┘     └──────────────┘
+┌─────────────┐      ┌──────────────────┐     ┌────────────────┐      ┌───────────┐      ┌──────────────┐
+│  User Query │ ──▶ │ Nova Reasoning   │ ──▶ │ Tool Selection │ ──▶ │ Execution │ ──▶  |  Synthesis   │
+│  (Question) │     │  (Amazon Nova 2) │      │  (Which tool?) │      │ (Run it!) │      │ (Answer!)    │
+└─────────────┘     └──────────────────┘      └────────────────┘      └───────────┘      └──────────────┘
 ```
 
 The agent follows a **5-step reasoning loop** for every question:
